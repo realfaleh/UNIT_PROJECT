@@ -10,8 +10,6 @@ It helps students and fresh graduates explore suitable career paths based on the
 
 Python handles the application logic, data storage, and authentication, while **Ollama and Gemma 3** provide AI-powered career analysis, job title recommendations, and interview questions.
 
-![CareerMate](CareerMateRoadmap.png)
-
 ---
 
 ## Features
@@ -120,13 +118,8 @@ CareerMate/
 ├── requirements.txt
 ├── README.md
 │
-├── careermate.png
-│
 └── data/
     └── candidates.json
-```
-
----
 
 ## Technologies
 
@@ -158,15 +151,3 @@ ollama run gemma3
 ```bash
 python3 main.py
 ```
-
----
-
-## Requirements
-
-Before submitting the project, update the requirements file:
-
-```bash
-pip freeze > requirements.txt
-```
-
-This records the Python packages used by the project.
