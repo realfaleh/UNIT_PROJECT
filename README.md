@@ -6,7 +6,7 @@
 
 CareerMate is an AI-powered career discovery and guidance system built with Python.
 
-It helps students and fresh graduates explore suitable career paths based on their **major, experience, skills, and interests**.
+It helps students and fresh graduates explore suitable career paths based on their **major, career stage, skills, and interests**.
 
 Python handles the application logic, data storage, and authentication, while **Ollama and Gemma 3** provide AI-powered career analysis, job title recommendations, and interview questions.
 
@@ -14,12 +14,12 @@ Python handles the application logic, data storage, and authentication, while **
 
 ## Features
 
-* 🔐 Create an account and log in securely
-* 👤 Create and view a career profile
-* 🤖 Get AI-powered career analysis
-* 💼 Get five suitable job title suggestions
-* 🎤 Generate interview questions for a specific job title
-* 🚪 Log out of the account
+- 🔐 Create an account and log in securely
+- 👤 Create and view a career profile
+- 🤖 Get AI-powered career analysis
+- 💼 Get five suitable job title suggestions
+- 🎤 Generate interview questions for a specific job title
+- 🚪 Log out of the account
 
 ---
 
@@ -27,25 +27,25 @@ Python handles the application logic, data storage, and authentication, while **
 
 The user provides:
 
-* **Email**
-* **Password**
-* **Name**
-* **Major**
-* **Experience**
-* **Skills**
-* **Interests**
+- **Email**
+- **Password**
+- **Name**
+- **Major**
+- **Career Stage**
+- **Skills**
+- **Interests**
 
 Example:
 
 ```text
 Name: Reema
 Major: Computer Science
-Experience: Fresh Graduate
+Career Stage: Fresh Graduate
 Skills: Python, SQL, Git, HTML, CSS
 Interests: Web Development, AI, Data
 ```
 
-The user's **major, experience, skills, and interests** are used as inputs for the AI career analysis and job title recommendations.
+The user's **major, career stage, skills, and interests** are used as inputs for the AI career analysis and job title recommendations.
 
 ---
 
@@ -92,9 +92,9 @@ After logging in:
 
 Provides:
 
-* Suitable career paths
-* Skills to improve
-* A practical next step
+- Suitable career paths
+- Skills to improve
+- A practical next step
 
 ### 💼 Suitable Job Titles
 
@@ -102,7 +102,7 @@ Generates five job titles based on the user's profile.
 
 ### 🎤 Interview Preparation
 
-Generates five interview questions based on the selected job title and the user's experience level.
+Generates five interview questions based on the selected job title and the user's career stage.
 
 ---
 
@@ -120,15 +120,16 @@ CareerMate/
 │
 └── data/
     └── candidates.json
+```
 
 ## Technologies
 
-* Python
-* Ollama
-* Gemma 3
-* JSON
-* hashlib
-* getpass
+- Python
+- Ollama
+- Gemma 3
+- JSON
+- hashlib
+- getpass
 
 ---
 
