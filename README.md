@@ -10,7 +10,7 @@ It helps students and fresh graduates explore suitable career paths based on the
 
 Python handles the application logic, data storage, and authentication, while **Ollama and Gemma 3** provide AI-powered career analysis, job title recommendations, and interview questions.
 
-![CareerMate](/CareerMate Roadmap.png)
+![CareerMate](CareerMate%Roadmap.png)
 
 ---
 
