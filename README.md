@@ -1,44 +1,172 @@
-# UNIT_PROJECT
+# 🤖 CareerMate
 
+### AI-Powered Career Discovery & Guidance System
 
-## Based on what you’ve learned until now , create a project of your choosing (impress us with your imagination) . This project must at least satisfy the following minimum requirements :
+## Overview
 
-- Must be interactive on CLI.
-- Use your coding skills in Python accurately.
-- Organize Your Code into modules & (or packages)
-- Use git & Github to track changes in your code.
+CareerMate is an AI-powered career discovery and guidance system built with Python.
 
-## Example Project :  An online Grocery Store :
+It helps students and fresh graduates explore suitable career paths based on their **major, experience, skills, and interests**.
 
-#### Overview : An online store that sells fruits to customers. This online store has 2 main users. The customer and the manager of the store . Each one of them should be able to do the following tasks for the store to function properly . 
+Python handles the application logic, data storage, and authentication, while **Ollama and Gemma 3** provide AI-powered career analysis, job title recommendations, and interview questions.
 
-### Features & User Stories
-#### As a customer I should be able to do the following :
-- Browse  Products . 
-- View the product info (summary, specs, price, quantity , etc.)
-- Search for Products.
-- Get recommendations for my next purchase based on my purchase history.
-- Add Products to the shopping cart .
-- Remove a product from the shopping cart.
-- List the products in my shopping cart. 
-- Continue to checkout . 
-- Fill in my address for delivery.
-- Get receipt of my purchases.
-- Check delivery status . 
+![CareerMate](/CareerMate Roadmap.png)
 
+---
 
+## Features
 
-#### Usage :
- Explain to the user how to use your project . 
- for example:
- - type in search product_name to search for a product.
- - type in list_products to show all the products in the grocery.
- - type in show product_name to get information about this product.
- - type in buy product_name to buy the product . 
- - and so on...
+* 🔐 Create an account and log in securely
+* 👤 Create and view a career profile
+* 🤖 Get AI-powered career analysis
+* 💼 Get five suitable job title suggestions
+* 🎤 Generate interview questions for a specific job title
+* 🚪 Log out of the account
 
+---
 
-### For your project. Edit this README.md file to include your own project name,  overview, user stories, and usage. 
+## User Inputs
 
-### NOTE: before submitting the final project, please do the following command:
-`pip freeze > requirements.txt` to enable use to know & use the packages used in your project.
+The user provides:
+
+* **Email**
+* **Password**
+* **Name**
+* **Major**
+* **Experience**
+* **Skills**
+* **Interests**
+
+Example:
+
+```text
+Name: Reema
+Major: Computer Science
+Experience: Fresh Graduate
+Skills: Python, SQL, Git, HTML, CSS
+Interests: Web Development, AI, Data
+```
+
+The user's **major, experience, skills, and interests** are used as inputs for the AI career analysis and job title recommendations.
+
+---
+
+## Usage
+
+Run the application:
+
+```bash
+python3 main.py
+```
+
+The main menu will appear:
+
+```text
+==================================================
+              🤖 CareerMate
+   AI-Powered Career Discovery System
+==================================================
+
+1. 🔐 Login
+2. 📝 Create Account
+3. ❌ Exit
+```
+
+After logging in:
+
+```text
+========================================
+              👩 MY CAREER
+========================================
+
+1. 👤 My Profile
+2. 🤖 Career Analysis
+3. 💼 Suitable Job Titles
+4. 🎤 Interview Preparation
+5. 🚪 Logout
+```
+
+---
+
+## AI Features
+
+### 🤖 Career Analysis
+
+Provides:
+
+* Suitable career paths
+* Skills to improve
+* A practical next step
+
+### 💼 Suitable Job Titles
+
+Generates five job titles based on the user's profile.
+
+### 🎤 Interview Preparation
+
+Generates five interview questions based on the selected job title and the user's experience level.
+
+---
+
+## Project Structure
+
+```text
+CareerMate/
+│
+├── main.py
+├── ai.py
+├── profile.py
+├── storage.py
+├── requirements.txt
+├── README.md
+│
+├── careermate.png
+│
+└── data/
+    └── candidates.json
+```
+
+---
+
+## Technologies
+
+* Python
+* Ollama
+* Gemma 3
+* JSON
+* hashlib
+* getpass
+
+---
+
+## How to Run
+
+### 1. Install Python packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run Gemma 3 with Ollama
+
+```bash
+ollama run gemma3
+```
+
+### 3. Run CareerMate
+
+```bash
+python3 main.py
+```
+
+---
+
+## Requirements
+
+Before submitting the project, update the requirements file:
+
+```bash
+pip freeze > requirements.txt
+```
+
+This records the Python packages used by the project.
