@@ -111,8 +111,6 @@ Suggest exactly 5 suitable job titles.
 
 Return ONLY this format:
 
-💼 SUITABLE JOB TITLES
-
 1. Job Title
 2. Job Title
 3. Job Title
@@ -131,15 +129,11 @@ Rules:
 
     return ask_ai(prompt)
 
-
-def generate_interview_questions(
-    job_title,
-    career_stage
-):
+def generate_interview_questions(job_title, career_stage):
     """
-    Generate interview questions
-    based on the job title and career_stage.
-
+    Generate interview questions based on the job title
+    and the candidate's career stage.
+    
     """
 
     prompt = f"""
@@ -148,34 +142,36 @@ You are CareerMate, an interview preparation assistant.
 Generate exactly 5 interview questions for:
 
 Job Title: {job_title}
-Candidate career_stage: {career_stage}
+Candidate Career Stage: {career_stage}
 
-Use this structure:
+The questions must be relevant to the specific job title.
 
-1. [Technical]
-Question
+Include a relevant mix of:
+- Technical or job-specific questions
+- Behavioral questions
+- Problem-solving or situational questions
 
-2. [Technical]
-Question
+Important:
+- If the job is technical, include relevant technical questions.
+- If the job is non-technical, use job-specific questions instead of programming or technical questions.
+- Match the difficulty to the candidate's career stage.
+- Do not assume the candidate has advanced experience.
+- Keep questions short and easy to read.
 
-3. [Behavioral]
-Question
+Return ONLY the 5 questions in this format:
 
-4. [Behavioral]
-Question
-
-5. [Problem-Solving]
-Question
+1. Question
+2. Question
+3. Question
+4. Question
+5. Question
 
 Rules:
-- Match the candidate's career_stage level.
-- Keep questions short and easy to read.
-- Return ONLY the 5 questions.
+- Exactly 5 questions.
 - No introduction.
+- No conclusion.
 - No answers.
 - No explanations.
-- No interviewer notes.
-- No follow-up questions.
 - Do not ask the user anything.
 """
 

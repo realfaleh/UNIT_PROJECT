@@ -1,0 +1,53 @@
+[
+    {
+        "name": "abdullah",
+        "major": "accounting",
+        "career_stage": "senior",
+        "skills": [
+            "data analysis",
+            "ai",
+            "comminucation"
+        ],
+        "interests": [
+            "data",
+            "ai"
+        ],
+        "email": "abdullah.text@com",
+        "password_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    },
+    {
+        "name": "lama",
+        "major": "grafic disigner",
+        "career_stage": "graduate",
+        "skills": [
+            "design",
+            "creativity",
+            "thinking"
+        ],
+        "interests": [
+            "design"
+        ],
+        "email": "lama@test.com",
+        "password_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    },
+    {
+        "name": "Reema",
+        "major": "Computer Science",
+        "career_stage": "Fresh graduate",
+        "skills": [
+            "sql",
+            "html",
+            "css",
+            "data analysis",
+            "python",
+            "ai"
+        ],
+        "interests": [
+            "ai",
+            "data analysis",
+            "web developer"
+        ],
+        "email": "reeema@test.com",
+        "password_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    }
+]
